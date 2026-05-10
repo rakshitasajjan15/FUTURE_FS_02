@@ -14,8 +14,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [filterStatus, setFilterStatus] = useState("all");
 
-  const API = "http://localhost:5000/api/leads";
-
+  const API = "https://future-fs-02-backend-fg80.onrender.com/api/leads";
   const fetchLeads = async () => {
     const res = await axios.get(API);
     setLeads(res.data);
